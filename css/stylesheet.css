@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    //border: 1px solid red;
+    padding: 0;
+}
+
+.header {
+    height: 4rem;
+    width: 100%;
+    border: 1px solid green;
+}
+
+.list {
+    width: 30rem;
+    margin: auto;
+    list-style: none;
+}
+
+
+.list__new {
+    
+    margin: auto;
+    
+}
