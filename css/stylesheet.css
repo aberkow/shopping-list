@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    //border: 1px solid red;
+    border: 1px solid red;
     padding: 0;
 }
 
@@ -14,11 +14,24 @@
     width: 30rem;
     margin: auto;
     list-style: none;
+    text-align: center;
 }
 
 
 .list__new {
-    
+    margin-left: 31.1%;
+    text-align: center;
+    width: 30rem;
+}
+
+.buttons {
+    width: 30rem;
+    text-align: center;
     margin: auto;
-    
+}
+
+
+
+.list__need-name {
+    text-align: center;
 }
