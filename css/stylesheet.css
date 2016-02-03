@@ -11,7 +11,22 @@ body {
 .header {
     height: 4rem;
     width: 100%;
-    border: 1px solid green;
+    //border: 1px solid green;
+}
+
+.header__title {
+    text-align: center;
+}
+
+.line {
+    width: 40rem;
+    color: #1B5E20;
+}
+
+.section__title {
+    text-align: center;
+    width: 10rem;
+    margin: auto;
 }
 
 .controls__options {
@@ -51,6 +66,7 @@ body {
 
 .list__new {
     margin-left: 31.1%;
+    margin-bottom: 0.5rem;
     text-align: center;
     width: 30rem;
     border-radius: 10px;
@@ -100,4 +116,7 @@ body {
     padding: 0.2rem 0;
 }
 
-
+.footer__devtext {
+    margin: 2rem 0 0.5rem 1rem;
+    color: #1B5E20;
+}

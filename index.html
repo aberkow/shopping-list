@@ -10,7 +10,7 @@
 <body>
     <!--Login, my lists, settings?-->
     <header class="header">
-        test
+        <h1 class="header__title">A great name goes here!</h1>
     </header>
     
     <!--Items to get-->
@@ -25,6 +25,17 @@
                 </li>
             </ul>
         </div>
+        
+        <!--new item for list-->
+        <h2 class="section__title">Add it</h2>
+        <input type="text" class="list__new" name="new-item" value="Add me to your list!">
+        
+        <div class="buttons">
+            <i class="fa fa-plus-square fa-5x add"></i>
+        </div>
+        
+        <hr class="line">      
+        <h2 class="section__title">Get it</h2>
         <ul class="list">
             <li class="list__need"><input class="list__need-name" type="text" name="Item" value="apple"></li>
             <li class="list__need"><input class="list__need-name" type="text"></li>
@@ -32,21 +43,11 @@
             <li class="list__need"><input class="list__need-name" type="text"></li>
             <li class="list__need"><input class="list__need-name" type="text"></li>
         </ul>
-    <hr>
     
-    <!--new item for list-->
-    <input type="text" class="list__new" name="new-item" value="Add me to your list!">
-    
-    <!--control buttons-->
-        
-        <div class="buttons">
-            <i class="fa fa-plus-square fa-5x add"></i>
-        </div>
-    </section>
-    
-    <hr>
+    <hr class="line">
     <!--Items I got-->
     <section>
+        <h2 class="section__title">Got it</h2>
         <ul class="list">
             <li class="list__have"><input type="text" class="list__have-name" value="test"></li>
             <li class="list__have"><input type="text" class="list__have-name"></li>
@@ -57,8 +58,12 @@
     </section>
     
     <!--something goes here...-->
-    <footer>
-        
+    <footer class="footer">
+       <h6 class="footer__devtext">Developed by Adam Berkowitz</h6> 
     </footer>
+<!--check to see if this is the correct jquery ui link-->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
