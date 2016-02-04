@@ -12,30 +12,17 @@
 <body>
     <!--Login, my lists, settings?-->
     <header class="header">
-        <h1 class="header__title">A great name goes here!</h1>
+        <h1 class="header__title">Shopping List</h1>
     </header>
     
     <!--Items to get find svg icons for controls-->
     <section class="section">
-        <!--
-        <div class="controls">
-            <ul class="controls__options">
-                <li class="controls__options-save">
-                    <i class="fa fa-floppy-o fa-2x"></i>
-                </li>
-                <li class="controls__options-share">
-                    <i class="fa fa-share-square-o fa-2x"></i>
-                </li>
-            </ul>
-        </div>
-        -->
         <!--new item for list-->
         <div class="section__title">Add it</div>
         <form id="newlist__form">
             <input type="text" class="list__new" name="new-item" value="Add me to your list!">
-            <div class="buttons">
-                <i id="add" class="fa fa-plus-square fa-5x"></i>
-            </div>
+            <input type="image" id="add" src="../images/shopping-cart-plus.svg" alt="add-item">
+            
         </form>
         
         <div class="line"></div>      
@@ -53,7 +40,8 @@
             -->
         </ul>
     
-    <hr class="line">
+        <hr class="line">
+    </section>
     <!--Items I got-->
     <section>
         <h2 class="section__title">Got it</h2>
