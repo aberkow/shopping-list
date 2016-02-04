@@ -42,11 +42,39 @@
     font-family: Delius, cursive;
 }
 
+.input__add {
+    height: 4rem;
+    width: 4rem;
+    fill: blue;
+}
+
 .list {
-    width: 30rem;
+    max-width: 30rem;
     margin: auto;
     list-style: none;
     text-align: center;
+}
+
+.list__items {
+    list-style-type: none;
+    padding: 0.2rem 0;
+}
+
+.list__items-need {
+    text-align: center;
+    max-width: 30rem;
+    font-size: 2rem;
+    font-family: Delius, cursive;
+    margin: 0.5rem 0;
+}
+
+.list__items-have {
+    text-align: center;
+    max-width: 30rem;
+    font-size: 2rem;
+    font-family: Delius, cursive;
+    text-decoration: line-through;
+    margin: 0.5rem 0;
 }
 
 #add {
