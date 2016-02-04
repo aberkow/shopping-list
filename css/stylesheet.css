@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    //border: 1px solid red;
     padding: 0;
 }
 
@@ -9,7 +9,6 @@
 }
 
 .header {
-    
     width: 100%;
     //border: 1px solid green;
     margin-bottom: 1rem;
@@ -43,11 +42,13 @@
     text-align: center;
 }
 
-.add {
+#add {
     color: #00C853;
     //box-shadow: 4px 5px 5px black;
     border-radius: 10px;
     cursor: pointer;
+    height: 5rem;
+    width: 5rem;
 }
 
 .add:hover {
@@ -71,8 +72,6 @@
     margin: auto;
 }
 
-
-
 .list__need-name {
     text-align: center;
     font-size: 2rem;
@@ -92,8 +91,6 @@
     border: 4px solid #C8E6C9;
 }
 
-
-
 .list__need {
     padding: 0.2rem 0;
 }
@@ -107,9 +104,6 @@
     margin: 2rem 0 0.5rem 1rem;
     color: #1B5E20;
 }
-
-    
-
 
 .section {
     text-align: center;

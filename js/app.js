@@ -5,7 +5,7 @@
 4 - Add accordion for each item to add categories (or tags)
 */
 
-
+/*
 $(document).ready(function() {
     $('#add').click(function() {
         //if there's nothing in the .list__new box send an alert 
@@ -19,4 +19,4 @@ $(document).ready(function() {
         }
     })
 });
-
+*/
