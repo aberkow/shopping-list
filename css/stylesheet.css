@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    //border: 1px solid red;
+    border: 1px solid red;
     padding: 0;
 }
 
@@ -25,15 +25,22 @@
     width: 40rem;
     color: #1B5E20;
 }
+.input {
+    text-align: center;
+}
 
-.section__title {
+.input__title {
     text-align: center;
     font-size: 3rem;
     font-family: Muli, sans-serif;
-    width: 10rem;
+    min-width: 10rem;
     margin: auto;
 }
 
+.input__new {
+    font-size: 2rem;
+    font-family: Delius, cursive;
+}
 
 .list {
     width: 30rem;
