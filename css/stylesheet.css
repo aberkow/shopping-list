@@ -1,11 +1,23 @@
+/*
+.dark-primary-color    { background: #0288D1; }
+.default-primary-color { background: #03A9F4; }
+.light-primary-color   { background: #B3E5FC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FFEB3B; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #B6B6B6; }
+*/
+
+
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    //border: 1px solid red;
     padding: 0;
 }
 
 .header, .footer {
-    background-color: #E8F5E9;
+    background-color: #0288D1;
 }
 
 .header {
@@ -21,12 +33,17 @@
     margin-top: 0;
 }
 
+body {
+    background-color: #B3E5FC;
+}
+
 .line {
     width: 40rem;
     color: #1B5E20;
 }
 .input {
     text-align: center;
+    background-color: #B3E5FC;
 }
 
 .input__title {
@@ -40,13 +57,21 @@
 .input__new {
     font-size: 2rem;
     font-family: Delius, cursive;
+    text-align: center;
+    background-color: #03A9F4;
+    border: 1px solid #03A9F4;
 }
 
 .input__add {
     height: 4rem;
     width: 4rem;
-    fill: red;
-    
+    margin: 1rem 0;
+    fill: #03A9F4; 
+}
+
+.input__add:hover {
+    fill: #FFEB3B;
+    cursor: pointer;
 }
 
 .list {
@@ -58,6 +83,7 @@
 
 .list__items {
     list-style-type: none;
+    margin: 0;
     padding: 0.2rem 0;
 }
 
@@ -78,7 +104,25 @@
     margin: 0.5rem 0;
 }
 
+.trash {
+    float: left;
+    font-size: 2rem;
+}
 
+.trash:hover {
+    color: #FFEB3B;
+    cursor: pointer;
+}
+
+.check {
+    float: right;
+    font-size: 2rem;
+}
+
+.check:hover {
+    color: #FFEB3B;
+    cursor: pointer;
+}
 
 #add {
     color: #00C853;
