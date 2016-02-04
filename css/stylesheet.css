@@ -45,7 +45,8 @@
 .input__add {
     height: 4rem;
     width: 4rem;
-    fill: blue;
+    fill: red;
+    
 }
 
 .list {
@@ -76,6 +77,8 @@
     text-decoration: line-through;
     margin: 0.5rem 0;
 }
+
+
 
 #add {
     color: #00C853;

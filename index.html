@@ -5,16 +5,17 @@
     <title>Shopping List</title>
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <!--Login, my lists, settings?-->
+    
     <header class="header">
         <h1 class="header__title">SVG ICONS HERE</h1>
     </header>
     
-    <!--Items to get find svg icons for controls-->
     <!--new item for list-->
     <section class="input">
         <div class="input__title">Shopping List</div>
@@ -23,7 +24,10 @@
                 <input type="text" class="input__new" name="new-item">
             </div>
             <div>
-                <input type="image" class="input__add" src="../images/shopping-cart-plus.svg">
+                <svg class="input__add" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"/>
+    <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"/>
+</svg>
             </div>
         </form>
     
@@ -32,36 +36,16 @@
        
     <section class="list">
         <ul class="list__items">
-           <li class="list__items-need">apples</li>
-           <li class="list__items-have">milk</li>
+           
+           <li class="list__items-need"><span class="material-icons trash">delete</span>apples<span class="material-icons check">check</span>
+           </li>
+           
+           <li class="list__items-have"><span class="material-icons trash">delete</span>milk<span class="material-icons check">check</span>
+           </li>
+           
        </ul>
     </section>    
-<!--  
-    <section class="section">
-        
-        <div class="section__title">Add it</div>
-        <form id="newlist__form">
-            <input type="image" id="add" src="../images/shopping-cart-plus.svg" alt="add-item">
-            <input type="text" class="list__new" name="new-item" value="Add me to your list!">
-        </form>
-     
-        <div class="line"></div>      
-        
-        <h2 class="section__title">Get it</h2>
-        <ul class="list">
-            <li class="list__need"><p class="list__need-name">apple</p></li>
-        </ul>
-    
-        <hr class="line">
-    </section>
 
-    <section>
-        <h2 class="section__title">Got it</h2>
-        <ul class="list">
-            <li class="list__have"><p class="list__have-name">milk</p>
-        </ul>
-    </section>
-    --> 
     <!--something goes here...-->
     <footer class="footer">
        <h6 class="footer__devtext">Developed by Adam Berkowitz</h6> 
