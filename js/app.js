@@ -5,18 +5,16 @@
 4 - Add accordion for each item to add categories (or tags)
 */
 
-/*
+var input = $('.input__new');
+
 $(document).ready(function() {
-    $('#add').click(function() {
-        //if there's nothing in the .list__new box send an alert 
-        debugger;
-        if ($('.list__new').val().trim().length == 0) {
-            alert('Please add an item to the list');
-        }
-        //else create a new li element and add the item text to it. 
-        else { 
-            
-        }
-    })
+   $('.input__add').click(function() {
+       if (input.val().trim().length == 0) {
+           alert('please add an item');
+       }
+       else {
+           alert(input.val());
+           $('.list__items').prepend(input.val());
+       }
+   }) 
 });
-*/
