@@ -67,6 +67,7 @@ body {
 
 .arrow {
     font-size: 2rem;
+    color: #FFEB3B;
 }
 
 .input__new {
@@ -126,8 +127,15 @@ body {
     opacity: 0.5;
 }
 
-.trash {
+.move {
     float: left;
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+
+.trash {
+    float: right;
+    margin-right: 2rem;
     font-size: 2rem;
 }
 
@@ -137,7 +145,7 @@ body {
 }
 
 .check {
-    float: right;
+    float: left;
     font-size: 2rem;
 }
 
