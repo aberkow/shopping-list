@@ -7,14 +7,28 @@
 
 var input = $('.input__new');
 
+
 $(document).ready(function() {
    $('.input__add').click(function() {
        if (input.val().trim().length == 0) {
            alert('please add an item');
        }
-       else {
-           alert(input.val());
-           $('.list__items').prepend(input.val());
+       else {   
+            $('#list__items').prepend(renderListElement(input.val()));
+            input.val('');
        }
    }) 
 });
+
+function renderListElement(content) {
+    return '<li class="list__items-need">'+
+                '<span class="material-icons move">more_vert</span>'+
+                '<span class="material-icons check">check_box</span>'+
+                '<p class="list__items-text">'+ content +'</p>'+
+                '<span class="material-icons trash" onclick="trashItem()">delete</span>'+
+            '</li>';
+}
+
+function trashItem() {
+    $(event.target).closest('li.list__items-need').remove();
+} 

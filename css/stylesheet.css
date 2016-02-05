@@ -102,7 +102,8 @@ body {
 
 .list__items {
     list-style-type: none;
-    margin: 0;
+    //margin: 0;
+    margin-bottom: 4rem;
     padding: 0.2rem 0;
     //cursor: move;
 }
@@ -177,4 +178,11 @@ body {
     text-align: center;
     display: inline-block;
     padding-bottom: 0px;
+}
+
+//simple max-width query
+//simple max-width query
+//work to make the span icons more responsive
+@media screen and ( max-height: 600px ){
+  .footer { position: block; }
 }
