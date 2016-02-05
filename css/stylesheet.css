@@ -130,12 +130,14 @@ body {
 .move {
     float: left;
     margin-right: 2rem;
+    padding-top: 6px;
     font-size: 2rem;
 }
 
 .trash {
     float: right;
     margin-right: 2rem;
+    padding-top: 6px;
     font-size: 2rem;
 }
 
@@ -147,6 +149,7 @@ body {
 .check {
     float: left;
     font-size: 2rem;
+    padding-top: 6px;
 }
 
 .check:hover {
@@ -163,4 +166,15 @@ body {
 
 .footer__area {
     height: 4rem;
+}
+.material-icons {
+    cursor: move;
+}
+
+.list__items-text {
+    width: 20rem;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 0px;
 }
