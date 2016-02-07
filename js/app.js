@@ -7,17 +7,21 @@
 
 var input = $('.input__new');
 
-
 $(document).ready(function() {
    $('.input__add').click(function() {
        if (input.val().trim().length == 0) {
-           alert('please add an item');
+           alert('Please add an item');
        }
        else {   
             $('#list__items').prepend(renderListElement(input.val()));
             input.val('');
        }
    }) 
+   
+   $('.check').click(function() {
+       alert('checked');
+   })
+    
 });
 
 function renderListElement(content) {
@@ -29,6 +33,14 @@ function renderListElement(content) {
             '</li>';
 }
 
+/*
+function itemChecked() {
+    this doesn't work!?
+}
+*/
+
 function trashItem() {
+    //debugger;
     $(event.target).closest('li.list__items-need').remove();
+    $(event.target).closest('li.list__items-have').remove();
 } 
