@@ -7,7 +7,6 @@
 
 var input = $('.input__new');
 
-
 $(document).ready(function() {
    $('.input__add').click(function() {
        if (input.val().trim().length == 0) {
@@ -18,6 +17,9 @@ $(document).ready(function() {
             input.val('');
        }
    }) 
+   
+   //checkItem();
+    
 });
 
 function renderListElement(content) {
@@ -29,6 +31,18 @@ function renderListElement(content) {
             '</li>';
 }
 
+function checkItem() {
+    debugger;
+    $('.check').on('click', 'toggleClass(list__items-have)');
+    
+    /*
+    $('.check').click(function() {
+        $(this).closest('li').toggleClass('list__items-have');
+    });
+    */
+}
+
 function trashItem() {
     $(event.target).closest('li.list__items-need').remove();
+    $(event.target).closest('li.list__items-have').remove();
 } 
