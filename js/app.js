@@ -12,16 +12,13 @@ $(document).ready(function() {
        if (input.val().trim().length == 0) {
            alert('Please add an item');
        }
-       else {   
-            $('#list__items').prepend(renderListElement(input.val()));
+       else {
+           $('.list__items').prepend(renderListElement(input.val()));
             input.val('');
        }
    }) 
    
-   $('.check').click(function() {
-       alert('checked');
-   })
-    
+   itemChecked();
 });
 
 function renderListElement(content) {
@@ -33,14 +30,13 @@ function renderListElement(content) {
             '</li>';
 }
 
-/*
 function itemChecked() {
-    this doesn't work!?
+    $('.list__items').click('.check', function() {
+        $(event.target).closest('li.list__items-need').toggleClass('list__items-have');
+    });
 }
-*/
 
 function trashItem() {
-    //debugger;
     $(event.target).closest('li.list__items-need').remove();
     $(event.target).closest('li.list__items-have').remove();
 } 
