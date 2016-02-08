@@ -18,6 +18,7 @@ $(document).ready(function() {
        }
    }) 
    
+   sortList();
    itemChecked();
 });
 
@@ -30,9 +31,14 @@ function renderListElement(content) {
             '</li>';
 }
 
+function sortList() {
+    $(this).sortable
+}
+
 function itemChecked() {
     $('.list__items').click('.check', function() {
         $(event.target).closest('li.list__items-need').toggleClass('list__items-have');
+        debugger;
     });
 }
 
