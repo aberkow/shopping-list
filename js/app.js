@@ -7,15 +7,12 @@ var input = $('.input__new');
 //var have = [];
 
 $(document).ready(function() {
-    /*
-    if (input.val().length > 0) {
-        $(input).keypress(function(event) {
-            if (event.which == 13) {
-                event.preventDefault();
-            }
-        })
-    }
-    */
+    $('.input__new').keydown(function(enter) {
+        if (enter.keyCode == 13) {
+            enter.preventDefault();
+            addNewItem();
+        }
+    });
     
     $('.input__add').click(addNewItem); 
     
@@ -35,7 +32,6 @@ function renderListElement(content) {
 }
 
 function addNewItem() {
-    
     if (input.val().trim().length == 0) {
            alert('Please add an item');
        }
@@ -48,7 +44,16 @@ function addNewItem() {
            currentElement.find('.move').on('mousedown', moveItem);
        }
 }
-
+/*
+function enterKeyPressed() {
+    input.keypress(function(event) {
+        if (event.which == 13) {
+            event.preventDefault();
+            alert('key pressed');
+        }
+    });
+}
+*/
 function callCheckItem() {
     $(event.target).html(
         $(event.target).text() == 'check_box' ? 'check_box_outline_blank' : 'check_box');
