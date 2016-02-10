@@ -22,7 +22,7 @@ $(document).ready(function() {
 //create full list item w/ all symbols
 function renderListElement(content) {
     return '<li class="list__items-need">'+
-                '<span class="material-icons move">more_vert</span>'+
+                '<span title="drag to move" class="material-icons move">more_vert</span>'+
                 '<span class="material-icons check">check_box</span>'+
                 '<p class="list__items-text">'+ content +'</p>'+
                 '<span class="material-icons trash">delete</span>'+
