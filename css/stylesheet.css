@@ -184,7 +184,24 @@ body {
 //simple max-width query
 //work to make the span icons more responsive
 
-//try @media only screen and (max-height: //800px) {  ... }
+@media only screen and (max-width: 500px) {
+    .list {
+        max-width: 20rem;
+    }
+    .list__items-need {
+        max-width: 20rem;
+        font-size: 1rem;
+    }
+}
+
+
+/*
+@media only screen and (max-height: //800px) {  
+    .footer {position: block;}
+}
+*/
+/*
 @media screen and ( max-height: 600px ){
   .footer { position: block; }
 }
+*/
