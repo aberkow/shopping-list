@@ -1,11 +1,12 @@
 /*
 1 - sort items by class or by dragging
 */
-
+debugger;
 var input = $('.input__new');
 
 $(document).ready(function() {
     //use enter key to input items
+    debugger;
     $('input').keydown(function(enter) {
         if (enter.keyCode == 13) {
             enter.preventDefault();
@@ -15,8 +16,8 @@ $(document).ready(function() {
     //click on cart to input items
     $('.input__add').click(addNewItem); 
     //click on checkbox to toggle class
-    $('.list__items').click('.check', function() {
-        $(event.target).closest('li.list__items-need').toggleClass('list__items-have');
+    $('.list__items').click('.check', function(evt) {
+        $(evt.target).closest('li.list__items-need').toggleClass('list__items-have');
     });
 });
 //create full list item w/ all symbols
@@ -44,18 +45,18 @@ function addNewItem() {
        }
 }
 //toggle type of box
-function callCheckItem() {
+function callCheckItem(evt) {
     //sort item to top or bottom of list according to class
-    $(event.target).closest('li.list__items-need').appendTo('.list__items');
-    $(event.target).closest('li.list__items-have').prependTo('.list__items');
+    $(evt.target).closest('li.list__items-need').appendTo('.list__items');
+    $(evt.target).closest('li.list__items-have').prependTo('.list__items');
     //check or uncheck the box
-    $(event.target).html($(event.target).text() == 'check_box' ? 'check_box_outline_blank' : 'check_box');
+    $(evt.target).html($(evt.target).text() == 'check_box' ? 'check_box_outline_blank' : 'check_box');
     //terneray operator - a short way of making an if statement.
 }
 //remove item from list
 function trashItem() {
-    $(event.target).closest('li.list__items-need').remove();
-    $(event.target).closest('li.list__items-have').remove();
+    $(evt.target).closest('li.list__items-need').remove();
+    $(evt.target).closest('li.list__items-have').remove();
 } 
 //make items sortable by dragging
 function moveItem() {
@@ -63,6 +64,8 @@ function moveItem() {
     $('.list__items').disableSelection();  
 }
 
+/*
 function sortItem() {
     //sort the items
 }
+*/
